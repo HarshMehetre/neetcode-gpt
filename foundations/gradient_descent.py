@@ -4,12 +4,8 @@ class Solution:
         # Derivative:         f'(x) = 2x
         # Update rule:        x = x - learning_rate * f'(x)
         # Round final answer to 5 decimal places
-        #pass
-
         x = init
-
-        for i in range(iterations):
-            gradient = 2*x
-            x = x -learning_rate * gradient
+        for i in range (iterations):
+         x = x - learning_rate * 2*x
 
         return round(x,5)
